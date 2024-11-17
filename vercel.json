@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/lambda_handler.py",
+      "src": "main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/lambda_handler.py"
+      "dest": "main.py"
     }
   ]
 } 
